@@ -26,7 +26,7 @@ namespace Pendopo.Network
 
             EventGame.Instance.Invoke(EnumGame.Start);
             transform.position = gameManager.GetSpawnPos(Convert.ToInt32(OwnerClientId));
-            Debug.Log("Spawned");
+            Debug.Log("Server : " + IsServer);
         }
     }
 }

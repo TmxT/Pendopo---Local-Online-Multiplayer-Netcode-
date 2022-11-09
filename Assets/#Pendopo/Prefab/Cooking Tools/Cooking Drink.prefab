@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5264758754754212512
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3474810748612290508, guid: 4cacbf90706c3054bb735d391596651e,
+        type: 3}
+      propertyPath: m_Name
+      value: Cooking Drink
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491649375763063193, guid: 4cacbf90706c3054bb735d391596651e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491649375763063193, guid: 4cacbf90706c3054bb735d391596651e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491649375763063193, guid: 4cacbf90706c3054bb735d391596651e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491649375763063193, guid: 4cacbf90706c3054bb735d391596651e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491649375763063193, guid: 4cacbf90706c3054bb735d391596651e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491649375763063193, guid: 4cacbf90706c3054bb735d391596651e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491649375763063193, guid: 4cacbf90706c3054bb735d391596651e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491649375763063193, guid: 4cacbf90706c3054bb735d391596651e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491649375763063193, guid: 4cacbf90706c3054bb735d391596651e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491649375763063193, guid: 4cacbf90706c3054bb735d391596651e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491649375763063193, guid: 4cacbf90706c3054bb735d391596651e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cacbf90706c3054bb735d391596651e, type: 3}
+--- !u!4 &5759527172087686759 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 503802013490844871, guid: 4cacbf90706c3054bb735d391596651e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5264758754754212512}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8340448118575678202
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5759527172087686759}
+    m_Modifications:
+    - target: {fileID: 1524248121726092, guid: 12b99aef2c87f154eba59fd95db5f8b7, type: 3}
+      propertyPath: m_Name
+      value: SM_Prop_Kitchen_Drinks_Machine_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590111470493058, guid: 12b99aef2c87f154eba59fd95db5f8b7, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590111470493058, guid: 12b99aef2c87f154eba59fd95db5f8b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590111470493058, guid: 12b99aef2c87f154eba59fd95db5f8b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590111470493058, guid: 12b99aef2c87f154eba59fd95db5f8b7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590111470493058, guid: 12b99aef2c87f154eba59fd95db5f8b7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590111470493058, guid: 12b99aef2c87f154eba59fd95db5f8b7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590111470493058, guid: 12b99aef2c87f154eba59fd95db5f8b7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590111470493058, guid: 12b99aef2c87f154eba59fd95db5f8b7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590111470493058, guid: 12b99aef2c87f154eba59fd95db5f8b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590111470493058, guid: 12b99aef2c87f154eba59fd95db5f8b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590111470493058, guid: 12b99aef2c87f154eba59fd95db5f8b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 12b99aef2c87f154eba59fd95db5f8b7, type: 3}

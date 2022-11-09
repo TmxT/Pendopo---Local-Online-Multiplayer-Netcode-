@@ -103,11 +103,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 366816995acbeb44ab27d5295495af5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 504746120004207387}
   model: {fileID: 8369236716356100747}
-  moveSpeed: 5
+  moveSpeed: 2
   rotationSpeed: 10
   revers: 1
+  rb: {fileID: 504746120004207387}
+  Player: {fileID: 0}
 --- !u!4 &8369236716356100747 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7177854023467145040, guid: 222381865ac24434c8e0f796c07730c3,

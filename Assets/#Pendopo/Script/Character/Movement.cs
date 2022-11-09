@@ -4,17 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using Pendopo.Event;
+using Unity.Netcode;
 
 namespace Pendopo.Character
 {
-    public class Movement : MonoBehaviour
+    public class Movement : NetworkBehaviour
     {
-        [SerializeField] protected Rigidbody rb;
-
-        [Space]
         [SerializeField] protected Transform model;
-
-        protected Vector2 moveDir;
 
         [Space]
         [Range(1f, 10f)]
@@ -24,6 +20,7 @@ namespace Pendopo.Character
 
         [Space]
         [SerializeField] protected bool revers = true;
+        protected bool isWalking;
 
         [Header("Reference")]
         protected AnimatorController animatorController;
@@ -35,7 +32,7 @@ namespace Pendopo.Character
 
         protected virtual void FixedUpdate()
         {
-            if (EventGame.Instance.CurrentGame != EnumGame.Start)
+            if (EventGame.Instance.CurrentGame != EnumGame.Start || !IsOwner)
                 return;
 
             Move();
@@ -43,7 +40,7 @@ namespace Pendopo.Character
 
         protected virtual void Move()
         {
-            if (moveDir != Vector2.zero)
+            if (isWalking)
                 animatorController.Play(EnumAnim.Walk);
             else
                 animatorController.Play(EnumAnim.Idle);

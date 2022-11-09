@@ -1,41 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using Unity.Netcode;
 using UnityEngine;
 
-using Pendopo.Network;
 using Pendopo.Event;
-using Pendopo.Character;
 
 namespace Pendopo
 {
-    public class GameManager : NetworkBehaviour, IEventGame
+    public class WaitingPos : MonoBehaviour, IEventGame
     {
-        public static GameManager Instance { get; private set; }
+        [SerializeField] int id;
 
-        [Space]
-        [SerializeField] Transform[] listSpawnPos;
+        public NetworkObject Customer { private get; set; }
 
-        private void Awake()
+        public int Id { get { return id; } }
+
+        public bool Available { get { return !Customer; } }
+
+        [Header("Reference")]
+        private CustomerManager customerManager;
+
+        private void Start()
         {
-            Instance = this;
+            customerManager = CustomerManager.Instance;
         }
 
-        private void Initialize()
+        private void RequestCustomer()
         {
-
-        }
-
-        public Vector3 GetSpawnPos(int _index)
-        {
-            return listSpawnPos[_index].position;
+            customerManager.SpawningCustomer(this);
         }
 
         public void OnEventController(EnumGame _game)
         {
             if(_game == EnumGame.Start)
-                Initialize();
+                if (Available)
+                    RequestCustomer();
         }
 
         private void OnEnable()
