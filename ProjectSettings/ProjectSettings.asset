@@ -858,11 +858,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 1
-  cloudProjectId: 
+  cloudProjectId: 7b4f176d-98b4-421c-8a15-25925b75e806
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: Pendopo - Local Online Multiplayer [Netcode]
+  organizationId: timegames36
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
