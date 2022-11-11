@@ -1,2 +1,5 @@
-# Pendopo_Local_Online_Multiplayer--Netcode--
+# Online Multiplayer with Netcode and Relay
  
+Controls :
+Movement -> W, A, S, D
+Interact -> [Space]
