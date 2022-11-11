@@ -4,6 +4,13 @@ using UnityEngine;
 
 namespace Pendopo
 {
+    public enum EnumTag
+    {
+        Default,
+        PlayerCharacter,
+        Customer
+    }
+
     public enum EnumAnim
     {
         Idle,

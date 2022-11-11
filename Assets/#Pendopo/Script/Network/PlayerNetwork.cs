@@ -20,13 +20,25 @@ namespace Pendopo.Network
             gameManager = GameManager.Instance;
         }
 
+        private void Start()
+        {
+            Initialize();
+        }
+
+        private void Initialize()
+        {
+            if(IsOwner)
+                gameObject.tag = EnumTag.PlayerCharacter.ToString();
+        }
+
         public override void OnNetworkSpawn()
         {
             base.OnNetworkSpawn();
 
-            EventGame.Instance.Invoke(EnumGame.Start);
             transform.position = gameManager.GetSpawnPos(Convert.ToInt32(OwnerClientId));
+
             Debug.Log("Server : " + IsServer);
+            EventGame.Instance.Invoke(EnumGame.Start);
         }
     }
 }
